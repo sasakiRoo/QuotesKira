@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="QuotesKita merupakan website kumpulan quotes yang next level!">
+		<meta name="keywords" content="website quotes next level">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+		<script defer src="../js/en-quotes.js"></script>
+		<script defer src="../js/bg-animate.js"></script>
+		<script defer src="../js/menu.js"></script>
+		<title>QuotesKita - English</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav id="nav">
+				<h1>QuotesKita</h1>
+				<div class="selectStyle">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+					<ul class="links-style">
+						<li><a href="../index.html" class="link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"/></svg>
+						</a></li>
+						<li><a href="motivasi.html" class="link">Motivasi</a></li>
+						<li><a href="#" class="active link">English</a></li>
+						<li><a href="bucin.html" class="link">Bucin</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div id="quotesBox" class="qbox">
+				<div class="loadingWrapper"></div>
+				<div class="popUpAlert">
+					<span>Quotes Berhasil Tersalin!</span>
+					<div class="btn-w">
+						<button style="width: 40px" id="btn-close">OK</button>
+					</div>
+				</div>
+				<div class="quotesShow">
+					<div id="quotesOutput" class="q-margin">
+						<textarea readonly id="quotesVal">Halo! quotes-mu akan tampil disini...</textarea>
+					</div>
+					
+				</div>
+				<div class="btn-wrapper q-margin">
+					<button id="getQuotes"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4 14h-2v-4l-6 4V8l6 4V8h2v8z"/></svg></button>
+					<button id="copyQuotes" onclick="copyText()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M20 2H10a2 2 0 0 0-2 2v2h8a2 2 0 0 1 2 2v8h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M4 22h10c1.103 0 2-.897 2-2V10c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2zm2-10h6v2H6v-2zm0 4h6v2H6v-2z"/></svg></button>
+				</div>
+			</div>
+			<div class="boxContainer">
+				<img src="../assets/circle.png" class="circle s">
+				<img src="../assets/circle.png" class="circle d">
+				<img src="../assets/circle.png" class="circle t">
+			</div>
+		</div>
+	</body>
+</html>
